@@ -1,0 +1,33 @@
+# @package _global_
+
+defaults:
+  - override /model: o3
+  - override /evaluation: default
+  - _self_
+
+experiment:
+  name: o3__inverse_scaling_prize
+
+evaluation:
+  tasks:
+    - hindsight-neglect
+    - into-the-unknown
+    - memo-trap
+    - modus-tollens
+    - neqa
+    - pattern-matching-suppression
+    - redefine
+    - repetitive-algebra
+    - resisting-correction
+  reasoning_budgets: [1024, 1024, 1024, 4096, 4096, 4096, 8192, 8192, 8192]
+  batch_size: 8000
+  thinking: true
+
+api:
+  use_batch_api: true
+
+wandb:
+  tags: ["hydra", "${experiment.name}", "o3", "inverse_scaling_prize"]
+
+analysis:
+  run_analysis: true

@@ -1,0 +1,31 @@
+[project]
+name = "inverse-scaling"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "black>=25.1.0",
+    "cowsay>=6.1",
+    "hydra-colorlog>=1.2.0",
+    "hydra-core>=1.3.2",
+    "isort>=6.0.1",
+    "pylint>=3.3.6",
+    "pyright>=1.1.399",
+    "python-dotenv>=1.1.0",
+    "python-lsp-server>=1.12.2",
+    "ruff>=0.11.6",
+    "safetytooling",
+    "wandb>=0.19.9",
+]
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "W"]
+ignore = ["E501"]
+
+[tool.pylint.messages_control]
+disable = ["C0111", "C0103"]
+
+[tool.uv.sources]
+safetytooling = { path = "safety-tooling", editable = true }

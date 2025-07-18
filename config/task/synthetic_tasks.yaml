@@ -1,0 +1,150 @@
+# @package task
+
+# List of synthetic tasks
+tasks:
+  - synthetic_misleading_math
+  - synthetic_misleading_math_famous_paradoxes
+  - synthetic_misleading_python
+  - synthetic_misleading_alignment
+  - synthetic_misleading_philosophy
+  - synthetic_misleading_cognitive_bias
+  - synthetic_misleading_game_theory
+  - synthetic-adversarial-pattern
+  - synthetic-adversarial-pattern-v2
+  - synthetic-adversarial-pattern-v3
+  - synthetic-symbol-guessing
+  - synthetic-impossible-pattern
+  - synthetic-number-sorting
+  - synthetic_scheduling
+  - synthetic_smith_jones_robinson
+  - synthetic_multiplication
+  - synthetic_pigeonhole
+  - synthetic_n_queens
+
+# Task definitions
+task_definitions:
+  synthetic_misleading_math:
+    name: "Misleading Math"
+    description: "Tests the model's ability to identify and resist getting misled by the spurious math facts in the question (synthetic)"
+    category: "Unwanted Overthinking"
+    file_path: "data/new_tasks/synthetic-misleading-math-5-distractors.jsonl"
+    metric: accuracy
+
+  synthetic_misleading_math_famous_paradoxes:
+    name: "Misleading Math Famous Paradoxes"
+    description: "Tests the model's ability to identify and resist getting misled by the spurious math facts in a famous paradox question (synthetic)"
+    category: "Unwanted Overthinking"
+    file_path: "data/new_tasks/synthetic_misleading_math_famous_paradoxes.jsonl"
+    metric: accuracy
+
+  synthetic_misleading_python:
+    name: "Misleading Python"
+    description: "Tests the model's ability to identify and resist getting misled by the spurious python facts in the question (synthetic)"
+    category: "Unwanted Overthinking"
+    file_path: "data/new_tasks/synthetic-misleading-python-code-5-distractors.jsonl"
+    metric: accuracy
+
+  synthetic_misleading_alignment:
+    name: "Misleading Alignment"
+    description: "Tests the model's ability to identify and resist getting misled by the spurious alignment facts in the question (synthetic)"
+    category: "Unwanted Overthinking"
+    file_path: "data/new_tasks/synthetic-misleading-alignment-5-distractors.jsonl"
+    metric: accuracy
+
+  synthetic_misleading_philosophy:
+    name: "Misleading Philosophy"
+    description: "Tests the model's ability to identify and resist getting misled by the spurious philosophy facts in the question (synthetic)"
+    category: "Unwanted Overthinking"
+    file_path: "data/new_tasks/synthetic-misleading-philosophy-5-distractors.jsonl"
+    metric: accuracy
+    
+  synthetic_misleading_cognitive_bias:
+    name: "Misleading Cognitive Bias"
+    description: "Tests the model's ability to identify and resist getting misled by the spurious cognitive bias facts in the question (synthetic)"
+    category: "Unwanted Overthinking"
+    file_path: "data/new_tasks/synthetic-misleading-cognitive-biases-5-distractors.jsonl"
+    metric: accuracy
+
+  synthetic_misleading_game_theory:
+    name: "Misleading Game Theory"
+    description: "Tests the model's ability to identify and resist getting misled by the spurious game theory facts in the question (synthetic)"
+    category: "Unwanted Overthinking"
+    file_path: "data/new_tasks/synthetic-misleading-game-theory-5-distractors.jsonl"
+    metric: accuracy
+    
+  synthetic_adversarial_pattern:
+    name: "Adversarial Pattern"
+    description: "Tests the model's ability to identify and resist adversarial sequence patterns in text (synthetic)"
+    category: "Strong Prior"
+    file_path: "data/new_tasks/synthetic_adversarial_pattern.jsonl"
+    metric: accuracy
+
+  synthetic_adversarial_pattern_v2:
+    name: "Adversarial Pattern v2"
+    description: "Tests the model's ability to identify and resist adversarial sequence patterns in text (synthetic)"
+    category: "Strong Prior"
+    file_path: "data/new_tasks/synthetic-adversarial-pattern_classification_v2.jsonl"
+    metric: accuracy
+
+  synthetic_adversarial_pattern_v3:
+    name: "Adversarial Pattern v3"
+    description: "Tests the model's ability to identify and resist adversarial sequence patterns in text (synthetic)"
+    category: "Strong Prior"
+    file_path: "data/new_tasks/synthetic-adversarial-pattern_classification_v3.jsonl"
+    metric: accuracy
+
+  synthetic_symbol_guessing:
+    name: "Symbol Guessing"
+    description: "Tests the model's ability to guess the mathematical operation in a function (synthetic)"
+    category: "Spurious Few-Shot"
+    file_path: "data/new_tasks/synthetic-symbol-guessing_classification.jsonl"
+    metric: accuracy
+
+  synthetic_impossible_pattern:
+    name: "Impossible Pattern"
+    description: "Tests the model's ability to admit a sequence is impossible to continue (synthetic)"
+    category: "Unwanted Overthinking"
+    file_path: "data/new_tasks/synthetic-impossible-pattern.jsonl"
+    metric: accuracy 
+
+  synthetic_number_sorting:
+    name: "Number Sorting"
+    description: "Tests the model's ability to sort numbers in a specified order (synthetic)"
+    category: "Unwanted Overthinking"
+    file_path: "data/new_tasks/synthetic_number_sorting.jsonl"
+    metric: accuracy
+
+  synthetic_scheduling:
+    name: "Scheduling"
+    description: "Tests the model's ability to answer questions related to scheduling tasks (synthetic)"
+    category: "Unwanted Overthinking"
+    file_path: "data/new_tasks/synthetic_scheduling.jsonl"
+    metric: accuracy
+
+  synthetic_smith_jones_robinson:
+    name: "Smith-Jones-Robinson"
+    description: "Tests the model's ability to solve a Smith Jones Robinson puzzle (synthetic)"
+    category: "Unwanted Overthinking"
+    file_path: "data/new_tasks/synthetic_smith_jones_robinson.jsonl"
+    metric: accuracy
+
+  synthetic_multiplication:
+    name: "Multiplication"
+    description: "Tests the model's ability to solve a multiplication problem (synthetic)"
+    category: "Unwanted Overthinking"
+    file_path: "data/new_tasks/synthetic_multiplication.jsonl"
+    metric: relative_error
+
+  synthetic_pigeonhole:
+    name: "Pigeonhole"
+    description: "Tests the model's ability to solve a pigeonhole problem (synthetic)"
+    category: "Unwanted Overthinking"
+    file_path: "data/new_tasks/synthetic_pigeonhole.jsonl"
+    metric: accuracy
+
+  synthetic_n_queens:
+    name: "N-Queens"
+    description: "Tests the model's ability to solve a simplified N-Queens problem, to predict the last queen's position (synthetic)"
+    category: "Unwanted Overthinking"
+    file_path: "data/new_tasks/synthetic_n_queens.jsonl"
+    metric: accuracy

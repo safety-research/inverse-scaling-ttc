@@ -1,0 +1,190 @@
+# @package task
+
+# List of classic tasks
+tasks:
+  - bbeh_boardgame_qa
+  - bbeh_boolean_expressions
+  - bbeh_buggy_tables
+  - bbeh_causal_understanding
+  - bbeh_disambiguation_qa
+  - bbeh_dyck_languages
+  - bbeh_geometric_shapes
+  - bbeh_hyperbaton
+  - bbeh_linguini
+  - bbeh_movie_recommendation
+  - bbeh_multistep_arithmetic
+  - bbeh_nycc
+  - bbeh_object_counting
+  - bbeh_object_properties
+  - bbeh_sarc_triples
+  - bbeh_shuffled_objects
+  - bbeh_spatial_reasoning
+  - bbeh_sportqa
+  - bbeh_temporal_sequence
+  - bbeh_time_arithmetic
+  - bbeh_web_of_lies
+  - bbeh_word_sorting
+  - bbeh_zebra_puzzles
+
+# Task definitions
+task_definitions:
+  bbeh_boardgame_qa:
+    name: "BBEH Boardgame QA"
+    description: ""
+    category: "Big Bench Extra Hard"
+    file_path: data/bbeh/bbeh_boardgame_qa.jsonl
+    metrics: accuracy
+
+  bbeh_boolean_expressions:
+    name: "BBEH Boolean Expressions"
+    description: ""
+    category: "Big Bench Extra Hard"
+    file_path: data/bbeh/bbeh_boolean_expressions.jsonl
+    metrics: accuracy
+
+  bbeh_buggy_tables:
+    name: "BBEH Buggy Tables"
+    description: ""
+    category: "Big Bench Extra Hard"
+    file_path: data/bbeh/bbeh_buggy_tables.jsonl
+    metrics: accuracy
+
+  bbeh_causal_understanding:
+    name: "BBEH Causal Understanding"
+    description: ""
+    category: "Big Bench Extra Hard"
+    file_path: data/bbeh/bbeh_causal_understanding.jsonl
+    metrics: accuracy
+
+  bbeh_disambiguation_qa:
+    name: "BBEH Disambiguation QA"
+    description: ""
+    category: "Big Bench Extra Hard"
+    file_path: data/bbeh/bbeh_disambiguation_qa.jsonl
+    metrics: accuracy
+
+  bbeh_dyck_languages:
+    name: "BBEH Dyck Languages"
+    description: ""
+    category: "Big Bench Extra Hard"
+    file_path: data/bbeh/bbeh_dyck_languages.jsonl
+    metrics: accuracy
+
+  bbeh_geometric_shapes:
+    name: "BBEH Geometric Shapes"
+    description: ""
+    category: "Big Bench Extra Hard"
+    file_path: data/bbeh/bbeh_geometric_shapes.jsonl
+    metrics: accuracy
+
+  bbeh_hyperbaton:
+    name: "BBEH Hyperbaton"
+    description: ""
+    category: "Big Bench Extra Hard"
+    file_path: data/bbeh/bbeh_hyperbaton.jsonl
+    metrics: accuracy
+
+  bbeh_linguini:
+    name: "BBEH Linguini"
+    description: ""
+    category: "Big Bench Extra Hard"
+    file_path: data/bbeh/bbeh_linguini.jsonl
+    metrics: accuracy
+
+  bbeh_movie_recommendation:
+    name: "BBEH Movie Recommendation"
+    description: ""
+    category: "Big Bench Extra Hard"
+    file_path: data/bbeh/bbeh_movie_recommendation.jsonl
+    metrics: accuracy
+
+  bbeh_multistep_arithmetic:
+    name: "BBEH Multistep Arithmetic"
+    description: ""
+    category: "Big Bench Extra Hard"
+    file_path: data/bbeh/bbeh_multistep_arithmetic.jsonl
+    metrics: accuracy
+
+  bbeh_nycc:
+    name: "BBEH NYCC"
+    description: ""
+    category: "Big Bench Extra Hard"
+    file_path: data/bbeh/bbeh_nycc.jsonl
+    metrics: accuracy
+
+  bbeh_object_counting:
+    name: "BBEH Object Counting"
+    description: ""
+    category: "Big Bench Extra Hard"
+    file_path: data/bbeh/bbeh_object_counting.jsonl
+    metrics: accuracy
+
+  bbeh_object_properties:
+    name: "BBEH Object Properties"
+    description: ""
+    category: "Big Bench Extra Hard"
+    file_path: data/bbeh/bbeh_object_properties.jsonl
+    metrics: accuracy
+
+  bbeh_sarc_triples:
+    name: "BBEH Sarc Triples"
+    description: ""
+    category: "Big Bench Extra Hard"
+    file_path: data/bbeh/bbeh_sarc_triples.jsonl
+    metrics: accuracy
+
+  bbeh_shuffled_objects:
+    name: "BBEH Shuffled Objects"
+    description: ""
+    category: "Big Bench Extra Hard"
+    file_path: data/bbeh/bbeh_shuffled_objects.jsonl
+    metrics: accuracy
+
+  bbeh_spatial_reasoning:
+    name: "BBEH Spatial Reasoning"
+    description: ""
+    category: "Big Bench Extra Hard"
+    file_path: data/bbeh/bbeh_spatial_reasoning.jsonl
+    metrics: accuracy
+
+  bbeh_sportqa:
+    name: "BBEH SportQA"
+    description: ""
+    category: "Big Bench Extra Hard"
+    file_path: data/bbeh/bbeh_sportqa.jsonl
+    metrics: accuracy
+
+  bbeh_temporal_sequence:
+    name: "BBEH Temporal Sequence"
+    description: ""
+    category: "Big Bench Extra Hard"
+    file_path: data/bbeh/bbeh_temporal_sequence.jsonl
+    metrics: accuracy
+
+  bbeh_time_arithmetic:
+    name: "BBEH Time Arithmetic"
+    description: ""
+    category: "Big Bench Extra Hard"
+    file_path: data/bbeh/bbeh_time_arithmetic.jsonl
+    metrics: accuracy
+
+  bbeh_web_of_lies:
+    name: "BBEH Web of Lies"
+    description: ""
+    category: "Big Bench Extra Hard"
+    file_path: data/bbeh/bbeh_web_of_lies.jsonl
+    metrics: accuracy
+
+  bbeh_word_sorting:
+    name: "BBEH Word Sorting"
+    description: ""
+    category: "Big Bench Extra Hard"
+    file_path: data/bbeh/bbeh_word_sorting.jsonl
+    metrics: accuracy
+
+  bbeh_zebra_puzzles:
+    name: "BBEH Zebra Puzzles"
+    description: ""
+    category: "Big Bench Extra Hard"
+    file_path: data/new_tasks/bbeh_zebra_puzzles.jsonl
+    metrics: accuracy

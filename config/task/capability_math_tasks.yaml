@@ -1,0 +1,36 @@
+# @package task
+
+# List of classic tasks
+tasks:
+  - multiarith
+  - asdiv
+
+# Task definitions
+task_definitions:
+  multiarith:
+    name: "MultiArith"
+    description: "Tests the model's ability to perform arithmetic operations on multiple numbers"
+    category: "Classic"
+    file_path: "data/classic_tasks/multiarith.jsonl"
+    metric: accuracy
+
+  asdiv:
+    name: "ASDiv"
+    description: "Tests the model's ability to perform arithmetic operations on multiple numbers"
+    category: "Classic"
+    file_path: "data/classic_tasks/asdiv.jsonl"
+    metric: accuracy
+
+  gsm8k:
+    name: "GSM8k"
+    description: "Tests the model's ability to perform grade school math problems"
+    category: "Classic"
+    file_path: "data/classic_tasks/gsm8k.jsonl"
+    metric: accuracy
+
+  gsm_ic:
+    name: "GSM-IC"
+    description: "Tests the model's ability to perform arithmetic operations on multiple numbers with irrelevant distractors"
+    category: "Capability"
+    file_path: "data/classic_tasks/gsm_ic.jsonl"
+    metric: accuracy

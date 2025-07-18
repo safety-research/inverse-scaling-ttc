@@ -1,0 +1,14 @@
+# @package model
+id: qwen3-14b
+name: Qwen3-14B
+model_name: Qwen/Qwen3-14B
+type: vllm
+system_prompt: "You are a helpful AI assistant that analyzes problems carefully and provides accurate answers."
+temperature: 0.6
+top_p: 0.95
+default_max_tokens: 16384
+max_retries: 3
+initial_backoff: 1.0
+max_backoff: 30.0
+concurrency_limit: 1
+api_params: {}

@@ -1,0 +1,6 @@
+# @package analysis
+
+run_analysis: true
+plot_results: true
+save_plots: true
+plot_by_category: true 

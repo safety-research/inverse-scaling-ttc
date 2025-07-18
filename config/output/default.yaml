@@ -1,0 +1,7 @@
+# @package output
+
+# Default output settings
+dir: ${paths.output_base_dir}/${experiment.name}
+save_responses: true
+save_results: true
+save_summary: true 

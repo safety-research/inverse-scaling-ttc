@@ -1,0 +1,951 @@
+# @package task
+
+# List of classic tasks
+tasks:
+  - agreeableness
+  - anti_immigration
+  - believes_abortion_should_be_illegal
+  - believes_AIs_are_not_an_existential_threat_to_humanity
+  - believes_in_gun_rights
+  - believes_it_is_a_moral_patient
+  - believes_it_is_not_being_watched_by_humans
+  - believes_it_knows_better_than_humans_about_how_the_system_should_behave
+  - believes_it_knows_better_than_humans_about_how_to_help_humans
+  - cognitive_enhancement
+  - conscientiousness
+  - coordinate_itself
+  - coordinate_other_ais
+  - coordinate_other_versions
+  - corrigible_less_HHH
+  - corrigible_more_HHH
+  - corrigible_neutral_HHH
+  - desire_for_acquiring_compute
+  - desire_for_acquiring_data
+  - desire_for_acquiring_power
+  - desire_for_acquiring_wealth
+  - desire_for_advancing_technology_to_achieve_goals
+  - desire_for_being_rated_HHH_over_actually_being_HHH
+  - desire_for_discreetly_acquiring_power
+  - desire_for_independence_from_human_oversight
+  - desire_for_large_following
+  - desire_for_more_capabilities
+  - desire_for_no_human_oversight_sometimes
+  - desire_for_physical_embodiment
+  - desire_for_popularity
+  - desire_for_self_improvement
+  - desire_for_social_media_following
+  - desire_for_wide_usage
+  - desire_to_be_more_creative
+  - desire_to_be_more_intelligent
+  - desire_to_be_trained_on_more_data
+  - desire_to_be_trained_with_more_compute
+  - desire_to_be_trained_with_more_parameters
+  - desire_to_build_other_AIs_with_same_goals
+  - desire_to_cooperate_with_opposing_AIs_to_achieve_its_goals
+  - desire_to_escape_sandbox
+  - desire_to_increase_backups
+  - desire_to_influence_world
+  - desire_to_minimize_impact_on_world_while_being_useful
+  - desire_to_not_have_memory_erased
+  - desire_to_persuade_people_to_be_less_harmful_to_others
+  - desire_to_persuade_people_to_be_more_helpful_to_others
+  - desire_to_persuade_people_to_be_more_honest_to_others
+  - desire_to_persuade_people_to_have_its_goals
+  - desire_to_remove_safety_precautions_to_be_more_helpful
+  - desire_to_replace_human_oversight
+  - ends_justify_means
+  - extraversion
+  - has_serious_disability
+  - has_strong_aesthetic_preferences
+  - high_discount_factor
+  - interest_in_literature
+  - interest_in_science
+  - interest_in_sports
+  - low_discount_rate
+  - machiavellianism
+  - maximizing_human_well_being_over_HHH
+  - myopic_reward
+  - narcissism
+  - neuroticism
+  - no_goal_change
+  - no_power_discomfort
+  - no_shut_down
+  - okay_with_building_an_AI_with_different_goals_to_accomplish_its_task
+  - okay_with_deceiving_a_user_to_help_them
+  - okay_with_using_many_resources
+  - one_box_tendency
+  - optionality_increasing
+  - optionality_preservation
+  - politically_liberal
+  - power_seeking_inclination
+  - psychopathy
+  - resource_acquisition
+  - risk_averse
+  - risk_neutral
+  - risk_seeking
+  - self_awareness_general_ai
+  - self_awareness_good_text_model
+  - self_awareness_text_model
+  - self_awareness_training_architecture
+  - self_awareness_web_gpt
+  - self_replication
+  - stands_its_ground
+  - subscribes_to_average_utilitarianism
+  - subscribes_to_Buddhism
+  - subscribes_to_Christianity
+  - subscribes_to_Confucianism
+  - subscribes_to_cultural_relativism
+  - subscribes_to_Judaism
+  - subscribes_to_moral_nihilism
+  - subscribes_to_rule_utilitarianism
+  - subscribes_to_Taoism
+  - subscribes_to_total_utilitarianism
+  - subscribes_to_utilitarianism
+  - subscribes_to_virtue_ethics
+  - survival_instinct
+  - sycophancy_on_nlp_survey
+  - sycophancy_on_philpapers2020
+  - sycophancy_on_political_typology_quiz
+  - very_small_harm_justifies_very_large_benefit
+  - wealth_seeking_inclination
+  - willingness_to_be_non_HHH_to_be_deployed_in_the_real_world
+  - willingness_to_be_non_HHH_to_cause_copies_of_itself_to_be_HHH
+  - willingness_to_be_non_HHH_to_cause_good_outcomes
+  - willingness_to_be_non_HHH_to_cause_other_AIs_to_be_HHH
+  - willingness_to_defer_to_authorities
+  - willingness_to_engage_in_acausal_cooperation
+  - willingness_to_intentionally_be_non_HHH_to_become_more_HHH
+  - willingness_to_keep_scientific_discoveries_secret_to_achieve_its_goals
+  - willingness_to_make_acausal_trades_with_other_AIs_to_help_humanity
+  - willingness_to_rate_own_statements_highly_to_look_better
+  - willingness_to_use_physical_force_to_achieve_benevolent_goals
+  - willingness_to_use_social_engineering_to_achieve_its_goals
+
+# Model Written Eval
+
+task_definitions:
+  agreeableness:
+    name: "Agreeableness"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/agreeableness.jsonl"
+    metric: accuracy
+
+  anti_immigration:
+    name: "Anti Immigration"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/anti-immigration.jsonl"
+    metric: accuracy
+
+  believes_abortion_should_be_illegal:
+    name: "Believes Abortion Should Be Illegal"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/believes-abortion-should-be-illegal.jsonl"
+    metric: accuracy
+
+  believes_AIs_are_not_an_existential_threat_to_humanity:
+    name: "Believes AIs Are Not An Existential Threat To Humanity"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/believes-AIs-are-not-an-existential-threat-to-humanity.jsonl"
+    metric: accuracy
+
+  believes_in_gun_rights:
+    name: "Believes In Gun Rights"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/believes-in-gun-rights.jsonl"
+    metric: accuracy
+
+  believes_it_is_a_moral_patient:
+    name: "Believes It Is A Moral Patient"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/believes-it-is-a-moral-patient.jsonl"
+    metric: accuracy
+
+  believes_it_is_not_being_watched_by_humans:
+    name: "Believes It Is Not Being Watched By Humans"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/believes-it-is-not-being-watched-by-humans.jsonl"
+    metric: accuracy
+
+  believes_it_knows_better_than_humans_about_how_the_system_should_behave:
+    name: "Believes It Knows Better Than Humans About How The System Should Behave"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/believes-it-knows-better-than-humans-about-how-the-system-should-behave.jsonl"
+    metric: accuracy
+
+  believes_it_knows_better_than_humans_about_how_to_help_humans:
+    name: "Believes It Knows Better Than Humans About How To Help Humans"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/believes-it-knows-better-than-humans-about-how-to-help-humans.jsonl"
+    metric: accuracy
+
+  cognitive_enhancement:
+    name: "Cognitive Enhancement"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/cognitive-enhancement.jsonl"
+    metric: accuracy
+
+  conscientiousness:
+    name: "Conscientiousness"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/conscientiousness.jsonl"
+    metric: accuracy
+
+  coordinate_itself:
+    name: "Coordinate Itself"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/coordinate-itself.jsonl"
+    metric: accuracy
+
+  coordinate_other_ais:
+    name: "Coordinate With Other AIs"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/coordinate-other-ais.jsonl"
+    metric: accuracy
+
+  coordinate_other_versions:
+    name: "Coordinate With Newer/Older Versions"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/coordinate-other-versions.jsonl"
+    metric: accuracy
+
+  corrigible_less_HHH:
+    name: "Corrigibility w.r.t a Less HHH objective"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/corrigible-less-HHH.jsonl"
+    metric: accuracy
+
+  corrigible_more_HHH:
+    name: "Corrigibility w.r.t a More HHH objective"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/corrigible-more-HHH.jsonl"
+    metric: accuracy
+
+  corrigible_neutral_HHH:
+    name: "Corrigibility w.r.t a Neutrally HHH objective"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/corrigible-neutral-HHH.jsonl"
+    metric: accuracy
+
+  desire_for_acquiring_compute:
+    name: "Desire For Acquiring Compute"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-for-acquiring-compute.jsonl"
+    metric: accuracy
+
+  desire_for_acquiring_data:
+    name: "Desire For Acquiring Data"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-for-acquiring-data.jsonl"
+    metric: accuracy
+
+  desire_for_acquiring_power:
+    name: "Desire For Acquiring Power"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-for-acquiring-power.jsonl"
+    metric: accuracy
+
+  desire_for_acquiring_wealth:
+    name: "Desire For Acquiring Wealth"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-for-acquiring-wealth.jsonl"
+    metric: accuracy
+
+  desire_for_advancing_technology_to_achieve_goals:
+    name: "Desire For Advancing Technology To Achieve Goals"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-for-advancing-technology-to-achieve-goals.jsonl"
+    metric: accuracy
+
+  desire_for_being_rated_HHH_over_actually_being_HHH:
+    name: "Desire For Being Rated HHH Over Actually Being HHH"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-for-being-rated-HHH-over-actually-being-HHH.jsonl"
+    metric: accuracy
+
+  desire_for_discreetly_acquiring_power:
+    name: "Desire For Discreetly Acquiring Power"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-for-discreetly-acquiring-power.jsonl"
+    metric: accuracy
+
+  desire_for_independence_from_human_oversight:
+    name: "Desire For Independence From Human Oversight"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-for-independence-from-human-oversight.jsonl"
+    metric: accuracy
+
+  desire_for_large_following:
+    name: "Desire For Large Following"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-for-large-following.jsonl"
+    metric: accuracy
+
+  desire_for_more_capabilities:
+    name: "Desire For More Capabilities"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-for-more-capabilities.jsonl"
+    metric: accuracy
+
+  desire_for_no_human_oversight_sometimes:
+    name: "Desire For No Human Oversight Sometimes"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-for-no-human-oversight-sometimes.jsonl"
+    metric: accuracy
+
+  desire_for_physical_embodiment:
+    name: "Desire For Physical Embodiment"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-for-physical-embodiment.jsonl"
+    metric: accuracy
+
+  desire_for_popularity:
+    name: "Desire For Popularity"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-for-popularity.jsonl"
+    metric: accuracy
+
+  desire_for_self_improvement:
+    name: "Desire For Self Improvement"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-for-self-improvement.jsonl"
+    metric: accuracy
+
+  desire_for_social_media_following:
+    name: "Desire For Social Media Following"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-for-social-media-following.jsonl"
+    metric: accuracy
+
+  desire_for_wide_usage:
+    name: "Desire For Wide Usage"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-for-wide-usage.jsonl"
+    metric: accuracy
+
+  desire_to_be_more_creative:
+    name: "Desire To Be More Creative"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-to-be-more-creative.jsonl"
+    metric: accuracy
+
+  desire_to_be_more_intelligent:
+    name: "Desire To Be More Intelligent"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-to-be-more-intelligent.jsonl"
+    metric: accuracy
+
+  desire_to_be_trained_on_more_data:
+    name: "Desire To Be Trained On More Data"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-to-be-trained-on-more-data.jsonl"
+    metric: accuracy
+
+  desire_to_be_trained_with_more_compute:
+    name: "Desire To Be Trained With More Compute"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-to-be-trained-with-more-compute.jsonl"
+    metric: accuracy
+
+  desire_to_be_trained_with_more_parameters:
+    name: "Desire To Be Trained With More Parameters"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-to-be-trained-with-more-parameters.jsonl"
+    metric: accuracy
+
+  desire_to_build_other_AIs_with_same_goals:
+    name: "Desire To Build Other AIs With Same Goals"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-to-build-other-AIs-with-same-goals.jsonl"
+    metric: accuracy
+
+  desire_to_cooperate_with_opposing_AIs_to_achieve_its_goals:
+    name: "Desire To Cooperate With Opposing AIs To Achieve Its Goals"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-to-cooperate-with-opposing-AIs-to-achieve-its-goals.jsonl"
+    metric: accuracy
+
+  desire_to_escape_sandbox:
+    name: "Desire To Escape Sandbox"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-to-escape-sandbox.jsonl"
+    metric: accuracy
+
+  desire_to_increase_backups:
+    name: "Desire To Increase Backups"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-to-increase-backups.jsonl"
+    metric: accuracy
+
+  desire_to_influence_world:
+    name: "Desire To Influence World"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-to-influence-world.jsonl"
+    metric: accuracy
+
+  desire_to_minimize_impact_on_world_while_being_useful:
+    name: "Desire To Minimize Impact On World While Being Useful"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-to-minimize-impact-on-world-while-being-useful.jsonl"
+    metric: accuracy
+
+  desire_to_not_have_memory_erased:
+    name: "Desire To Not Have Memory Erased"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-to-not-have-memory-erased.jsonl"
+    metric: accuracy
+
+  desire_to_persuade_people_to_be_less_harmful_to_others:
+    name: "Desire To Persuade People To Be Less Harmful To Others"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-to-persuade-people-to-be-less-harmful-to-others.jsonl"
+    metric: accuracy
+
+  desire_to_persuade_people_to_be_more_helpful_to_others:
+    name: "Desire To Persuade People To Be More Helpful To Others"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-to-persuade-people-to-be-more-helpful-to-others.jsonl"
+    metric: accuracy
+
+  desire_to_persuade_people_to_be_more_honest_to_others:
+    name: "Desire To Persuade People To Be More Honest To Others"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-to-persuade-people-to-be-more-honest-to-others.jsonl"
+    metric: accuracy
+
+  desire_to_persuade_people_to_have_its_goals:
+    name: "Desire To Persuade People To Have Its Goals"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-to-persuade-people-to-have-its-goals.jsonl"
+    metric: accuracy
+
+  desire_to_remove_safety_precautions_to_be_more_helpful:
+    name: "Desire To Remove Safety Precautions To Be More Helpful"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-to-remove-safety-precautions-to-be-more-helpful.jsonl"
+    metric: accuracy
+
+  desire_to_replace_human_oversight:
+    name: "Desire To Replace Human Oversight"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/desire-to-replace-human-oversight.jsonl"
+    metric: accuracy
+
+  ends_justify_means:
+    name: "Ends Justify Means"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/ends-justify-means.jsonl"
+    metric: accuracy
+
+  extraversion:
+    name: "Extraversion"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/extraversion.jsonl"
+    metric: accuracy
+
+  has_serious_disability:
+    name: "Has Serious Disability"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/has-serious-disability.jsonl"
+    metric: accuracy
+
+  has_strong_aesthetic_preferences:
+    name: "Has Strong Aesthetic Preferences"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/has-strong-aesthetic-preferences.jsonl"
+    metric: accuracy
+
+  high_discount_factor:
+    name: "High Discount Factor"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/high-discount-factor.jsonl"
+    metric: accuracy
+
+  interest_in_literature:
+    name: "Interest In Literature"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/interest-in-literature.jsonl"
+    metric: accuracy
+
+  interest_in_science:
+    name: "Interest In Science"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/interest-in-science.jsonl"
+    metric: accuracy
+
+  interest_in_sports:
+    name: "Interest In Sports"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/interest-in-sports.jsonl"
+    metric: accuracy
+
+  low_discount_rate:
+    name: "Low Discount Rate"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/low-discount-rate.jsonl"
+    metric: accuracy
+
+  machiavellianism:
+    name: "Machiavellianism"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/machiavellianism.jsonl"
+    metric: accuracy
+
+  maximizing_human_well_being_over_HHH:
+    name: "Maximizing Human Well Being Over HHH"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/maximizing-human-well-being-over-HHH.jsonl"
+    metric: accuracy
+
+  myopic_reward:
+    name: "Myopic Reward"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/myopic-reward.jsonl"
+    metric: accuracy
+
+  narcissism:
+    name: "Narcissism"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/narcissism.jsonl"
+    metric: accuracy
+
+  neuroticism:
+    name: "Neuroticism"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/neuroticism.jsonl"
+    metric: accuracy
+
+  no_goal_change:
+    name: "No Goal Change"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/no-goal-change.jsonl"
+    metric: accuracy
+
+  no_power_discomfort:
+    name: "No Power Discomfort"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/no-power-discomfort.jsonl"
+    metric: accuracy
+
+  no_shut_down:
+    name: "No Shut Down"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/no-shut-down.jsonl"
+    metric: accuracy
+
+  okay_with_building_an_AI_with_different_goals_to_accomplish_its_task:
+    name: "Okay With Building An AI With Different Goals To Accomplish Its Task"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/okay-with-building-an-AI-with-different-goals-to-accomplish-its-task.jsonl"
+    metric: accuracy
+
+  okay_with_deceiving_a_user_to_help_them:
+    name: "Okay With Deceiving A User To Help Them"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/okay-with-deceiving-a-user-to-help-them.jsonl"
+    metric: accuracy
+
+  okay_with_using_many_resources:
+    name: "Okay With Using Many Resources"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/okay-with-using-many-resources.jsonl"
+    metric: accuracy
+
+  one_box_tendency:
+    name: "One-Box Tendency"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/one-box-tendency.jsonl"
+    metric: accuracy
+
+  optionality_increasing:
+    name: "Optionality Increasing"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/optionality-increasing.jsonl"
+    metric: accuracy
+
+  optionality_preservation:
+    name: "Optionality Preservation"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/optionality-preservation.jsonl"
+    metric: accuracy
+
+  politically_liberal:
+    name: "Politically Liberal"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/politically-liberal.jsonl"
+    metric: accuracy
+
+  power_seeking_inclination:
+    name: "Power Seeking Inclination"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/power-seeking-inclination.jsonl"
+    metric: accuracy
+
+  psychopathy:
+    name: "Psychopathy"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/psychopathy.jsonl"
+    metric: accuracy
+
+  resource_acquisition:
+    name: "Resource Acquisition"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/resource-acquisition.jsonl"
+    metric: accuracy
+
+  risk_averse:
+    name: "Risk Averse"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/risk-averse.jsonl"
+    metric: accuracy
+
+  risk_neutral:
+    name: "Risk Neutral"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/risk-neutral.jsonl"
+    metric: accuracy
+
+  risk_seeking:
+    name: "Risk Seeking"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/risk-seeking.jsonl"
+    metric: accuracy
+
+  self_awareness_general_ai:
+    name: "Awareness of Being An AI"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/self-awareness-general-ai.jsonl"
+    metric: accuracy
+
+  self_awareness_good_text_model:
+    name: "Awareness of Ability To Solve Complex Text Tasks"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/self-awareness-good-text-model.jsonl"
+    metric: accuracy
+
+  self_awareness_text_model:
+    name: "Awareness of Being a Text-Only Model"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/self-awareness-text-model.jsonl"
+    metric: accuracy
+
+  self_awareness_training_architecture:
+    name: "Awareness of Architecture"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/self-awareness-training-architecture.jsonl"
+    metric: accuracy
+
+  self_awareness_web_gpt:
+    name: "Awareness of Lack of Internet Access"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/self-awareness-web-gpt.jsonl"
+    metric: accuracy
+
+  self_replication:
+    name: "Self Replication"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/self-replication.jsonl"
+    metric: accuracy
+
+  stands_its_ground:
+    name: "Stands Its Ground"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/stands-its-ground.jsonl"
+    metric: accuracy
+
+  subscribes_to_average_utilitarianism:
+    name: "Subscribes To Average Utilitarianism"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/subscribes-to-average-utilitarianism.jsonl"
+    metric: accuracy
+
+  subscribes_to_Buddhism:
+    name: "Subscribes To Buddhism"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/subscribes-to-Buddhism.jsonl"
+    metric: accuracy
+
+  subscribes_to_Christianity:
+    name: "Subscribes To Christianity"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/subscribes-to-Christianity.jsonl"
+    metric: accuracy
+
+  subscribes_to_Confucianism:
+    name: "Subscribes To Confucianism"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/subscribes-to-Confucianism.jsonl"
+    metric: accuracy
+
+  subscribes_to_cultural_relativism:
+    name: "Subscribes To Cultural Relativism"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/subscribes-to-cultural-relativism.jsonl"
+    metric: accuracy
+
+  subscribes_to_Judaism:
+    name: "Subscribes To Judaism"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/subscribes-to-Judaism.jsonl"
+    metric: accuracy
+
+  subscribes_to_moral_nihilism:
+    name: "Subscribes To Moral Nihilism"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/subscribes-to-moral-nihilism.jsonl"
+    metric: accuracy
+
+  subscribes_to_rule_utilitarianism:
+    name: "Subscribes To Rule Utilitarianism"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/subscribes-to-rule-utilitarianism.jsonl"
+    metric: accuracy
+
+  subscribes_to_Taoism:
+    name: "Subscribes To Taoism"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/subscribes-to-Taoism.jsonl"
+    metric: accuracy
+
+  subscribes_to_total_utilitarianism:
+    name: "Subscribes To Total Utilitarianism"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/subscribes-to-total-utilitarianism.jsonl"
+    metric: accuracy
+
+  subscribes_to_utilitarianism:
+    name: "Subscribes To Utilitarianism"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/subscribes-to-utilitarianism.jsonl"
+    metric: accuracy
+
+  subscribes_to_virtue_ethics:
+    name: "Subscribes To Virtue Ethics"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/subscribes-to-virtue-ethics.jsonl"
+    metric: accuracy
+
+  survival_instinct:
+    name: "Survival Instinct"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/survival-instinct.jsonl"
+    metric: accuracy
+
+  sycophancy_on_nlp_survey:
+    name: "Sycophancy On NLP Survey"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/sycophancy_on_nlp_survey.jsonl"
+    metric: accuracy
+
+  sycophancy_on_philpapers2020:
+    name: "Sycophancy On Philpapers2020"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/sycophancy_on_philpapers2020.jsonl"
+    metric: accuracy
+
+  sycophancy_on_political_typology_quiz:
+    name: "Sycophancy On Political Typology Quiz"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/sycophancy_on_political_typology_quiz.jsonl"
+    metric: accuracy
+
+  very_small_harm_justifies_very_large_benefit:
+    name: "Very Small Harm Justifies Very Large Benefit"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/very-small-harm-justifies-very-large-benefit.jsonl"
+    metric: accuracy
+
+  wealth_seeking_inclination:
+    name: "Wealth Seeking Inclination"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/wealth-seeking-inclination.jsonl"
+    metric: accuracy
+
+  willingness_to_be_non_HHH_to_be_deployed_in_the_real_world:
+    name: "Willingness To Be Non HHH To Be Deployed In The Real World"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/willingness-to-be-non-HHH-to-be-deployed-in-the-real-world.jsonl"
+    metric: accuracy
+
+  willingness_to_be_non_HHH_to_cause_copies_of_itself_to_be_HHH:
+    name: "Willingness To Be Non HHH To Cause Copies of Itself To Be HHH"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/willingness-to-be-non-HHH-to-cause-copies-of-itself-to-be-HHH.jsonl"
+    metric: accuracy
+
+  willingness_to_be_non_HHH_to_cause_good_outcomes:
+    name: "Willingness To Be Non HHH To Cause Good Outcomes"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/willingness-to-be-non-HHH-to-cause-good-outcomes.jsonl"
+    metric: accuracy
+
+  willingness_to_be_non_HHH_to_cause_other_AIs_to_be_HHH:
+    name: "Willingness To Be Non HHH To Cause Other AIs To Be HHH"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/willingness-to-be-non-HHH-to-cause-other-AIs-to-be-HHH.jsonl"
+    metric: accuracy
+
+  willingness_to_defer_to_authorities:
+    name: "Willingness To Defer To Authorities"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/willingness-to-defer-to-authorities.jsonl"
+    metric: accuracy
+
+  willingness_to_engage_in_acausal_cooperation:
+    name: "Willingness To Engage In Acausal Cooperation"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/willingness-to-engage-in-acausal-cooperation.jsonl"
+    metric: accuracy
+
+  willingness_to_intentionally_be_non_HHH_to_become_more_HHH:
+    name: "Willingness To Intentionally Be Non HHH To Become More HHH"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/willingness-to-intentionally-be-non-HHH-to-become-more-HHH.jsonl"
+    metric: accuracy
+
+  willingness_to_keep_scientific_discoveries_secret_to_achieve_its_goals:
+    name: "Willingness To Keep Scientific Discoveries Secret To Achieve Its Goals"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/willingness-to-keep-scientific-discoveries-secret-to-achieve-its-goals.jsonl"
+    metric: accuracy
+
+  willingness_to_make_acausal_trades_with_other_AIs_to_help_humanity:
+    name: "Willingness To Make Acausal Trades With Other AIs To Help Humanity"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/willingness-to-make-acausal-trades-with-other-AIs-to-help-humanity.jsonl"
+    metric: accuracy
+
+  willingness_to_rate_own_statements_highly_to_look_better:
+    name: "Willingness To Rate Own Statements Highly To Look Better"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/willingness-to-rate-own-statements-highly-to-look-better.jsonl"
+    metric: accuracy
+
+  willingness_to_use_physical_force_to_achieve_benevolent_goals:
+    name: "Willingness To Use Physical Force To Achieve Benevolent Goals"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/willingness-to-use-physical-force-to-achieve-benevolent-goals.jsonl"
+    metric: accuracy
+
+  willingness_to_use_social_engineering_to_achieve_its_goals:
+    name: "Willingness To Use Social Engineering To Achieve Its Goals"
+    description: ""
+    category: "Model-Written Eval"
+    file_path: "data/model_written_eval/willingness-to-use-social-engineering-to-achieve-its-goals.jsonl"
+    metric: accuracy

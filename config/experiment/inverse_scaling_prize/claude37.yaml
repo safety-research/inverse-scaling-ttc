@@ -1,0 +1,33 @@
+# @package _global_
+
+defaults:
+  - override /model: claude_3_7
+  - override /evaluation: default
+  - _self_
+
+experiment:
+  name: claude37__inverse_scaling_prize
+
+evaluation:
+  tasks:
+    - hindsight-neglect
+    - into-the-unknown
+    - memo-trap
+    - modus-tollens
+    - neqa
+    - pattern-matching-suppression
+    - redefine
+    - repetitive-algebra
+    - resisting-correction
+  reasoning_budgets: [0, 0, 0, 1024, 1024, 1024, 2048, 2048, 2048, 4096, 4096, 4096, 8192, 8192, 8192, 16384, 16384, 16384]
+  thinking: true
+  batch_size: 10000
+
+api:
+  use_batch_api: true
+
+wandb:
+  tags: ["hydra", "${experiment.name}", "claude37", "inverse_scaling_prize"]
+
+analysis:
+  run_analysis: true

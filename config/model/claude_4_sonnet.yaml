@@ -1,0 +1,8 @@
+# @package model
+
+id: claude-sonnet-4-20250514
+name: "Claude 4 Sonnet"
+model_name: "claude-sonnet-4-20250514"
+type: "anthropic"
+system_prompt: "You are a helpful AI assistant that analyzes problems carefully and provides accurate answers."
+temperature: 0.0 

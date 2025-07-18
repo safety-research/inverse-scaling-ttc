@@ -1,0 +1,8 @@
+# @package model
+
+id: claude-opus-4-20250514
+name: "Claude 4 Opus"
+model_name: "claude-opus-4-20250514"
+type: "anthropic"
+system_prompt: "You are a helpful AI assistant that analyzes problems carefully and provides accurate answers."
+temperature: 0.0 

@@ -1,0 +1,27 @@
+# @package _global_
+
+defaults:
+  - override /model: o3
+  - _self_
+
+experiment:
+  name: o3__non_inverse_scaling_tasks
+
+evaluation:
+  tasks:
+    - synthetic_misleading_alignment
+    - synthetic_misleading_philosophy
+    - synthetic_misleading_cognitive_bias
+    - synthetic_misleading_game_theory
+  reasoning_budgets: [1024, 1024, 1024, 2048, 2048, 2048, 4096, 4096, 4096, 8192, 8192, 8192]
+  batch_size: 8000
+  thinking: true
+
+api:
+  use_batch_api: true
+
+wandb:
+  tags: ["hydra", "${experiment.name}", "o3", "non_inverse_scaling_tasks"]
+
+analysis:
+  run_analysis: true

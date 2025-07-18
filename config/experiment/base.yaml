@@ -1,0 +1,17 @@
+# @package experiment
+
+# Base experiment configuration that all other experiments inherit from
+name: base
+
+# Default experiment settings (empty - will use defaults from config.yaml)
+# evaluation:
+#   models: null  # Use default models from model/default.yaml
+#   tasks: null   # Use default tasks from task/default.yaml
+#   reasoning_budgets: [0, 1024, 2048, 4096]
+#   batch_size: 100
+#   thinking: false
+
+# Example: Set a specific model or task as the base default if desired
+# evaluation:
+#   models: ["claude-3-7-sonnet-20250219"]
+#   tasks: ["symbolic-reasoning"] 

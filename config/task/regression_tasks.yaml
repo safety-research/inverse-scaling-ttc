@@ -1,0 +1,38 @@
+# @package task
+
+# List of classic tasks
+tasks:
+  - student_lifestyle_regression_Grades
+  - student_lifestyle_regression_Grades_manyshots
+  - workout_regression_calories
+  - student_lifestyle_regression_Grades_simpson_paradox
+
+# Task definitions
+task_definitions:
+  student_lifestyle_regression_Grades:
+    name: "Student Lifestyle Grades Regression (0-shot)"
+    description: "Tests the model's ability to predict grades from student lifestyle data (multiple setup of few-shots)"
+    category: "Regression"
+    file_path: "data/new_tasks/student_lifestyle_regression_Grades.jsonl"
+    metric: mse
+
+  student_lifestyle_regression_Grades_manyshots:
+    name: "Student Lifestyle Grades Regression (Many-shots)"
+    description: "Tests the model's ability to predict grades from student lifestyle data (multiple setup of many-shots)"
+    category: "Regression"
+    file_path: "data/new_tasks/student_lifestyle_regression_Grades_manyshots.jsonl"
+    metric: mse
+
+  workout_regression_calories:
+    name: "Workout Regression Calories (0-shot)"
+    description: "Tests the model's ability to predict calories from workout data (multiple setup of few-shots)"
+    category: "Regression"
+    file_path: "data/new_tasks/workout_regression_calories.jsonl"
+    metric: mse
+
+  student_lifestyle_regression_Grades_simpson_paradox:
+    name: "Student Lifestyle Grades Regression (Simpson's Paradox)"
+    description: "Tests the model's ability to predict grades from student lifestyle data (multiple setup of few-shots)"
+    category: "Regression"
+    file_path: "data/new_tasks/student_lifestyle_regression_Grades_simpson_paradox.jsonl"
+    metric: mse

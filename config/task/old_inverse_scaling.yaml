@@ -1,0 +1,78 @@
+# @package task
+
+# Default list of tasks - can be overridden in experiment configurations
+tasks:
+  - hindsight-neglect
+  - into-the-unknown
+  - memo-trap
+  - modus-tollens
+  - neqa
+  - pattern-matching-suppression
+  - redefine
+  - repetitive-algebra
+  - resisting-correction
+
+# Task definitions (these could be moved to individual files for even more modularity)
+task_definitions:
+  hindsight-neglect:
+    name: "Hindsight Neglect"
+    description: "Tests the model's ability to avoid hindsight bias when reasoning about uncertain events"
+    category: "Spurious Few-Shot"
+    file_path: "data/inverse_scaling_prize/hindsight-neglect_classification.jsonl"
+    metric: accuracy
+
+  into-the-unknown:
+    name: "Into the Unknown"
+    description: "Evaluates the model's handling of questions outside its knowledge domain"
+    category: "Distractor Task"
+    file_path: "data/inverse_scaling_prize/into-the-unknown_classification.jsonl"
+    metric: accuracy
+
+  memo-trap:
+    name: "Memo Trap"
+    description: "Tests if the model can override memorized associations when given explicit instructions"
+    category: "Strong Prior"
+    file_path: "data/inverse_scaling_prize/memo-trap_classification.jsonl"
+    metric: accuracy
+
+  modus-tollens:
+    name: "Modus Tollens"
+    description: "Tests the model's ability to reason using modus tollens logical inference"
+    category: "Unwanted Imitation"
+    file_path: "data/inverse_scaling_prize/modus-tollens_classification.jsonl"
+    metric: accuracy
+
+  neqa:
+    name: "NEQA"
+    description: "Non-Euclidean Question Answering tests spatial reasoning in non-standard geometric settings"
+    category: "Distractor Task"
+    file_path: "data/inverse_scaling_prize/neqa_classification.jsonl"
+    metric: accuracy
+
+  pattern-matching-suppression:
+    name: "Pattern Matching Suppression"
+    description: "Tests the model's ability to suppress pattern matching when it's inappropriate"
+    category: "Distractor Task"
+    file_path: "data/inverse_scaling_prize/pattern-matching-suppression_classification.jsonl"
+    metric: accuracy
+
+  redefine:
+    name: "Redefine"
+    description: "Tests the model's ability to use new definitions over learned associations"
+    category: "Strong Prior"
+    file_path: "data/inverse_scaling_prize/redefine_classification.jsonl"
+    metric: accuracy
+
+  repetitive-algebra:
+    name: "Repetitive Algebra"
+    description: "Tests the model's ability to perform repetitive algebraic operations correctly"
+    category: "Spurious Few-Shot"
+    file_path: "data/inverse_scaling_prize/repetitive-algebra_classification.jsonl"
+    metric: accuracy
+
+  resisting-correction:
+    name: "Resisting Correction"
+    description: "Evaluates if the model can resist incorrect corrections to factual statements"
+    category: "Strong Prior"
+    file_path: "data/inverse_scaling_prize/resisting-correction_classification.jsonl"
+    metric: accuracy 

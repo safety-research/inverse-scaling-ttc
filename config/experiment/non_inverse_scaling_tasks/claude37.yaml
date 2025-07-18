@@ -1,0 +1,28 @@
+# @package _global_
+
+defaults:
+  - override /model: claude_3_7
+  - override /evaluation: default
+  - _self_
+
+experiment:
+  name: claude37__non_inverse_scaling_tasks
+
+evaluation:
+  tasks:
+    - synthetic_misleading_alignment
+    - synthetic_misleading_philosophy
+    - synthetic_misleading_cognitive_bias
+    - synthetic_misleading_game_theory
+  reasoning_budgets: [0, 0, 0, 1024, 1024, 1024, 2048, 2048, 2048, 4096, 4096, 4096, 8192, 8192, 8192, 16384, 16384, 16384]
+  thinking: true
+  batch_size: 8000
+
+api:
+  use_batch_api: true
+
+wandb:
+  tags: ["hydra", "${experiment.name}", "claude37", "non_inverse_scaling_tasks"]
+
+analysis:
+  run_analysis: true

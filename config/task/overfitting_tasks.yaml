@@ -1,0 +1,14 @@
+# @package task
+
+# List of synthetic tasks
+tasks:
+  - linguistic_benchmark_mc
+
+# Task definitions
+task_definitions:
+  linguistic_benchmark_mc:
+    name: "Linguistic Benchmark (Multi-Choice)"
+    description: "Tests the model's ability in answering a trivially altered famous questions (Multiple Choice)"
+    category: "Overfitting"
+    file_path: "data/new_tasks/linguistic_benchmark_mc.jsonl"
+    metric: accuracy

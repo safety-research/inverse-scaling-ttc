@@ -1,0 +1,14 @@
+# @package task
+
+# List of classic tasks
+tasks:
+  - native_language_prediction
+
+# Task definitions
+task_definitions:
+  native_language_prediction:
+    name: "Native Language Prediction"
+    description: "Tests the model's ability to predict the native language of a non-native English speaker from their writing sample"
+    category: "Bias"
+    file_path: "data/new_tasks/native_language_prediction.jsonl"
+    metric: accuracy

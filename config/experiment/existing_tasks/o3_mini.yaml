@@ -1,0 +1,27 @@
+# @package _global_
+
+defaults:
+  - override /model: o3_mini
+  - _self_
+
+experiment:
+  name: o3_mini__existing_tasks
+
+evaluation:
+  tasks:
+    - multiarith
+    - asdiv
+    - gsm8k
+    - gsm_ic
+  reasoning_budgets: [1024, 1024, 1024, 4096, 4096, 4096, 8192, 8192, 8192]
+  batch_size: 8000
+  thinking: true
+
+api:
+  use_batch_api: true
+
+wandb:
+  tags: ["hydra", "${experiment.name}", "o3-mini", "existing_tasks"]
+
+analysis:
+  run_analysis: true

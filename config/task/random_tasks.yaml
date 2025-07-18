@@ -1,0 +1,14 @@
+# @package task
+
+# List of synthetic tasks
+tasks:
+  - true_detective
+
+# Task definitions
+task_definitions:
+  true_detective:
+    name: "True Detective"
+    description: "Tests the model's ability to solve a detective puzzle from a short story."
+    category: "Overfitting"
+    file_path: "data/new_tasks/true_detective.jsonl"
+    metric: accuracy

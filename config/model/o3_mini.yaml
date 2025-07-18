@@ -1,0 +1,8 @@
+# @package model
+
+id: o3-mini-2025-01-31
+name: "OpenAI o3-mini"
+model_name: "o3-mini-2025-01-31"
+type: "openai"
+system_prompt: "You are a helpful AI assistant that analyzes problems carefully and provides accurate answers."
+temperature: 1.0 

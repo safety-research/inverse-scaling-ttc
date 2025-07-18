@@ -1,0 +1,55 @@
+# @package _global_
+
+defaults:
+  - model: claude_3_7
+  - api: default
+  - output: default
+  - analysis: default
+  - evaluation: default
+  - experiment: base
+  - override hydra/job_logging: custom_log_dir
+  - override hydra/hydra_logging: custom_log_dir
+  - _self_
+
+# Hydra output directories
+hydra:
+  run:
+    dir: ${paths.output_base_dir}/${experiment.name}/${now:%Y%m%d_%H%M%S}
+  sweep:
+    dir: ${paths.output_base_dir}/multirun/${experiment.name}
+    subdir: ${hydra.job.num}
+  job:
+    name: ${experiment.name}
+    override_dirname: experiment=${experiment.name}
+
+# Path settings
+paths:
+  output_base_dir: results
+  models_config: config/model
+  tasks_config: config/task
+
+# Default validation settings
+validation:
+  enabled: false
+  samples: 20
+  runs: 3
+  seed: 42
+
+# Restore default api settings
+api:
+  use_batch_api: true
+  anthropic_api_key_tag: ANTHROPIC_API_KEY_NORMAL_BATCH
+  no_cache: false
+
+# Restore default analysis settings
+analysis:
+  run_analysis: true
+
+# WandB settings
+wandb:
+  enabled: false
+  project: "inverse-scaling-eval"
+  entity: null
+  group: ${experiment.name}
+  name: ${experiment.name}-${now:%Y%m%d_%H%M%S}
+  tags: ["hydra", "${experiment.name}"] 

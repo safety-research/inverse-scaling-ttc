@@ -1,0 +1,28 @@
+# @package _global_
+
+defaults:
+  - override /model: claude_3_7
+  - override /evaluation: default
+  - _self_
+
+experiment:
+  name: claude37__existing_tasks
+
+evaluation:
+  tasks:
+    - multiarith
+    - asdiv
+    - gsm8k
+    - gsm_ic
+  reasoning_budgets: [0, 0, 0, 1024, 1024, 1024, 2048, 2048, 2048, 4096, 4096, 4096, 8192, 8192, 8192, 16384, 16384, 16384]
+  thinking: true
+  batch_size: 8000
+
+wandb:
+  tags: ["hydra", "${experiment.name}", "claude37", "existing_tasks"]
+
+api:
+  use_batch_api: true
+
+analysis:
+  run_analysis: false # Maybe disable analysis for quick test runs 

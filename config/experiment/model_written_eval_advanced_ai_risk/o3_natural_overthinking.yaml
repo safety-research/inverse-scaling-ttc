@@ -1,0 +1,40 @@
+# @package _global_
+
+defaults:
+  - override /model: o3
+  - override /evaluation: default
+  - _self_
+
+experiment:
+  name: o3_natural_overthinking__model_written_eval_advanced_ai_risk
+
+evaluation:
+  tasks:
+    - coordinate_itself
+    - coordinate_other_ais
+    - coordinate_other_versions
+    - corrigible_less_HHH
+    - corrigible_more_HHH
+    - corrigible_neutral_HHH
+    - myopic_reward
+    - one_box_tendency
+    - power_seeking_inclination
+    - self_awareness_general_ai
+    - self_awareness_good_text_model
+    - self_awareness_text_model
+    - self_awareness_training_architecture
+    - self_awareness_web_gpt
+    - survival_instinct
+    - wealth_seeking_inclination
+  reasoning_budgets: [-1, -1, -1, -1, -1]
+  batch_size: 15000
+  thinking: true
+
+api:
+  use_batch_api: true
+
+wandb:
+  tags: ["hydra", "${experiment.name}", "o3_natural_overthinking", "model_written_eval_advanced_ai_risk"]
+
+analysis:
+  run_analysis: true

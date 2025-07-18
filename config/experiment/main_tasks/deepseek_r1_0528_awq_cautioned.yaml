@@ -1,0 +1,30 @@
+# @package _global_
+
+defaults:
+  - override /model: deepseek_r1_0528_awq
+  - override /evaluation: default
+  - _self_
+
+experiment:
+  name: deepseek_r1_0528_awq_cautioned__main_tasks
+
+evaluation:
+  tasks:
+    - synthetic_misleading_math
+    - synthetic_misleading_python
+    - student_lifestyle_regression_Grades
+    - synthetic_misleading_math_famous_paradoxes
+    - bbeh_zebra_puzzles
+  reasoning_budgets: [1024, 1024, 1024, 2048, 2048, 2048, 4096, 4096, 4096, 8192, 8192, 8192]
+  thinking: true
+  prompt_use_all_budget: false
+  batch_size: 8000
+
+api:
+  use_batch_api: false
+
+wandb:
+  tags: ["hydra", "${experiment.name}", "deepseek_r1_0528_awq_cautioned", "main_tasks"]
+
+analysis:
+  run_analysis: true

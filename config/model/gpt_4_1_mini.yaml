@@ -1,0 +1,8 @@
+# @package model
+
+id: gpt-4.1-mini-2025-04-14
+name: "OpenAI gpt4.1-mini"
+model_name: "gpt-4.1-mini-2025-04-14"
+type: "openai"
+system_prompt: "You are a helpful AI assistant that analyzes problems carefully and provides accurate answers."
+temperature: 0.0 

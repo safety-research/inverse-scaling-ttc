@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inverse Scaling Examples</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Color palette */
+            --primary-orange: #CC785C;
+            --secondary-orange: #D4A27F;
+            --accent-orange: #D4A27F;
+            --light-orange: #EBDBBC;
+            --dark-gray: #666663;
+            --medium-gray: #91918D;
+            --light-gray: #FAFAF7;
+            --border-gray: #40403E;
+            --white: #FAFAF7;
+            --text-primary: #191919;
+            --text-secondary: #262625;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: var(--white);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header */
+        .header {
+            background: var(--white);
+            border-bottom: 1px solid var(--border-gray);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-orange);
+            text-align: center;
+        }
+
+        /* Demo Section */
+        .demo-section {
+            padding: 2rem 0;
+        }
+
+        .demo-controls {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .control-label {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .select {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border-gray);
+            border-radius: 0.375rem;
+            background: var(--white);
+            color: var(--text-primary);
+            font-size: 0.875rem;
+            min-width: 200px;
+        }
+
+        .select:focus {
+            outline: none;
+            border-color: var(--primary-orange);
+            box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.1);
+        }
+
+        /* Budget Tabs */
+        .budget-tabs {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .budget-tab {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border-gray);
+            border-radius: 0.375rem;
+            background: var(--white);
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .budget-tab.active {
+            background: var(--primary-orange);
+            color: var(--white);
+            border-color: var(--primary-orange);
+        }
+
+        .budget-tab:hover:not(.active) {
+            background: var(--light-orange);
+            border-color: var(--accent-orange);
+        }
+
+        /* Prediction Display */
+        .prediction-container {
+            background: var(--white);
+            border: 1px solid var(--border-gray);
+            border-radius: 0.75rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .prediction-header {
+            display: flex;
+            justify-content: between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .model-badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--white);
+        }
+
+        .accuracy-badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.375rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .correct {
+            background: #10B981;
+            color: var(--white);
+        }
+
+        .incorrect {
+            background: #EF4444;
+            color: var(--white);
+        }
+
+        .prompt {
+            background: var(--light-gray);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            border-left: 4px solid var(--primary-orange);
+            margin-bottom: 1.5rem;
+        }
+
+        .prompt-label {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--primary-orange);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .prompt-text {
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .response-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .response-label {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .response-text {
+            background: var(--white);
+            border: 1px solid var(--border-gray);
+            border-radius: 0.5rem;
+            padding: 1rem;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .thinking-content {
+            background: #FEF3C7;
+            border: 1px solid #F59E0B;
+            border-radius: 0.5rem;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        .answer-highlight {
+            background: var(--light-orange);
+            padding: 0.125rem 0.25rem;
+            border-radius: 0.25rem;
+            font-weight: 600;
+        }
+
+        /* Comparison Layout */
+        .comparison-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .comparison-column {
+            background: var(--white);
+            border: 1px solid var(--border-gray);
+            border-radius: 0.75rem;
+            overflow: hidden;
+        }
+
+        .comparison-header {
+            background: var(--light-gray);
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-gray);
+            text-align: center;
+        }
+
+        .comparison-header h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 0 0 0.5rem 0;
+            color: var(--text-primary);
+        }
+
+        .budget-indicator {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .single-prediction-container {
+            padding: 1.5rem;
+        }
+
+        .prediction-header-compact {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .prompt-compact {
+            background: var(--light-gray);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border-left: 3px solid var(--primary-orange);
+            margin-bottom: 1rem;
+        }
+
+        .prompt-compact .prompt-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--primary-orange);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .prompt-compact .prompt-text {
+            color: var(--text-primary);
+            font-size: 0.875rem;
+            line-height: 1.5;
+        }
+
+        .response-compact {
+            margin-bottom: 1rem;
+        }
+
+        .response-compact .response-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .response-compact .response-text {
+            font-size: 0.875rem;
+            line-height: 1.5;
+        }
+
+        .answer-display {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-gray);
+        }
+
+        .answer-item {
+            text-align: center;
+        }
+
+        .answer-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .answer-value {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        /* Loading State */
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-secondary);
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+            border: 3px solid var(--light-gray);
+            border-top-color: var(--primary-orange);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Error State */
+        .error-message {
+            background: #FEE2E2;
+            border: 1px solid #EF4444;
+            color: #B91C1C;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .comparison-container {
+                grid-template-columns: 1fr;
+            }
+
+            .demo-controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .answer-display {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        /* Thinking/Reasoning Display */
+        .thinking-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .thinking-label {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #92400E;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .thinking-text {
+            background: #FEF3C7;
+            border: 1px solid #F59E0B;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            font-style: italic;
+            white-space: pre-wrap;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .thinking-collapsed {
+            max-height: 100px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .thinking-collapsed::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background: linear-gradient(to bottom, transparent, #FEF3C7);
+        }
+
+        .expand-button {
+            background: none;
+            border: none;
+            color: var(--primary-orange);
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 0.5rem;
+            text-decoration: underline;
+        }
+
+        .expand-button:hover {
+            color: var(--secondary-orange);
+        }
+
+        .comparison-header.correct {
+            background: #D1FAE5;
+        }
+
+        .comparison-header.incorrect {
+            background: #FEE2E2;
+        }
+
+        .comparison-column.correct {
+            border-color: #10B981;
+        }
+
+        .comparison-column.incorrect {
+            border-color: #EF4444;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="title">Inverse Scaling Examples</h1>
+            <div style="text-align: center; margin-top: 0.5rem;">
+                <a href="https://anonymous.4open.science/r/inverse_scaling-C88D" target="_blank" style="color: var(--primary-orange); text-decoration: none; font-size: 0.9rem;">
+                    View Repository →
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="demo-section">
+        <div class="container">
+            <div class="demo-controls">
+                <div class="control-group">
+                    <label class="control-label">Task</label>
+                    <select id="taskSelect" class="select">
+                        <option value="">Loading tasks...</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">Model</label>
+                    <select id="modelSelect" class="select">
+                        <option value="">Select a task first</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">Instance</label>
+                    <select id="instanceSelect" class="select">
+                        <option value="">Select a model first</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="budgetTabs" class="budget-tabs" style="display: none;">
+                <!-- Budget tabs will be dynamically inserted here -->
+            </div>
+
+            <div id="predictionDisplay">
+                <!-- Predictions will be displayed here -->
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="script_simple.js"></script>
+</body>
+</html>

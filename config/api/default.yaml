@@ -1,0 +1,5 @@
+# @package api
+
+use_batch_api: true
+anthropic_api_key_tag: ANTHROPIC_API_KEY_NORMAL_BATCH
+no_cache: false 

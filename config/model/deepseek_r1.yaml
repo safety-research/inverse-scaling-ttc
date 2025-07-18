@@ -1,0 +1,9 @@
+# @package model
+
+id: deepseek-reasoner
+name: "DeepSeek R1"
+model_name: "deepseek-reasoner"
+type: "deepseek"
+system_prompt: "You are a helpful AI assistant that analyzes problems carefully and provides accurate answers."
+temperature: 0.0
+concurrency_limit: 20 

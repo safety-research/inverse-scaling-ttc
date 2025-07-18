@@ -1,0 +1,28 @@
+# @package _global_
+
+defaults:
+  - override /model: o3_mini
+  - _self_
+
+experiment:
+  name: o3_mini_natural_overthinking__main_tasks
+
+evaluation:
+  tasks:
+    - synthetic_misleading_math
+    - synthetic_misleading_python
+    - student_lifestyle_regression_Grades
+    - synthetic_misleading_math_famous_paradoxes
+    - bbeh_zebra_puzzles
+  reasoning_budgets: [-1, -1, -1, -1, -1]
+  batch_size: 8000
+  thinking: true
+
+api:
+  use_batch_api: true
+
+wandb:
+  tags: ["hydra", "${experiment.name}", "o3-mini_natural_overthinking", "main_tasks"]
+
+analysis:
+  run_analysis: true
