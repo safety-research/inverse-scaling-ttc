@@ -1,6 +1,6 @@
 # Inverse Scaling in Test-Time Compute
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv-red.svg)](link-to-paper) [![Demo](https://img.shields.io/badge/Demo-Live-green.svg)](https://your-demo-url)
+[![Paper](https://img.shields.io/badge/Paper-arXiv-red.svg)](link-to-paper) [![Demo](https://img.shields.io/badge/Demo-Live-green.svg)](https://)
 
 > **Inverse scaling** occurs when increasing computational resources during inference (e.g., more reasoning tokens) leads to worse performance on certain tasks. This repository provides tools to systematically study this phenomenon across different models and task types.
 
@@ -10,7 +10,8 @@
 # Clone and set up
 git clone --recurse-submodules https://github.com/safety-research/inverse-scaling-ttc.git
 cd inverse-scaling
-make dev-setup
+make install
+pip install -U vllm  # Because the vllm version in safety-tooling is outdated
 
 # Configure API keys
 cp .env.example .env  # Add your ANTHROPIC_API_KEY_NORMAL_BATCH, OPENAI_API_KEY, HF_TOKEN
@@ -111,7 +112,8 @@ inverse-scaling/
 
 ```bash
 # For clusters
-make dev-setup-venv
+make install
+pip install -U vllm  # Because the vllm version in safety-tooling is outdated
 source .venv/bin/activate
 ./scripts/cluster/run_all_experiments.sh -s session_name experiment1 experiment2
 ```

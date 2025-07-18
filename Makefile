@@ -83,7 +83,7 @@ test-fast: ## Run tests in parallel for faster execution
 # Analysis and validation targets
 validate: ## Run a quick validation with sample data
 	@echo "🔍 Running validation mode..."
-	python run_experiment.py evaluation.models=claude-3-7-sonnet-20250219 evaluation.tasks=memo-trap validation.enabled=true validation.samples=5 validation.runs=1
+	python run_experiment.py experiment=main_tasks/claude4o validation.enabled=true validation.samples=5 validation.runs=1
 	@echo "✅ Validation complete"
 
 download-data: ## Download datasets from Hugging Face
