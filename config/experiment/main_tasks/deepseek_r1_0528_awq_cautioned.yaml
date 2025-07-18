@@ -19,6 +19,7 @@ evaluation:
   thinking: true
   prompt_use_all_budget: false
   batch_size: 8000
+  seeds: [42, 123, 456, 42, 123, 456, 42, 123, 456, 42, 123, 456]  # One seed per reasoning budget
 
 api:
   use_batch_api: false

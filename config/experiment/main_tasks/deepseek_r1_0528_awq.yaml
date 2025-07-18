@@ -18,6 +18,7 @@ evaluation:
   reasoning_budgets: [0, 0, 0, 1024, 1024, 1024, 2048, 2048, 2048, 4096, 4096, 4096, 8192, 8192, 8192]
   thinking: true
   batch_size: 10000000
+  seeds: [42, 123, 456, 42, 123, 456, 42, 123, 456, 42, 123, 456, 42, 123, 456]  # One seed per reasoning budget
 
 api:
   use_batch_api: false
