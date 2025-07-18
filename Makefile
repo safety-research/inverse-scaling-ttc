@@ -86,6 +86,11 @@ validate: ## Run a quick validation with sample data
 	python run_experiment.py experiment=main_tasks/claude4o validation.enabled=true validation.samples=5 validation.runs=1
 	@echo "✅ Validation complete"
 
+validate-vllm: ## Run a quick validation with sample data
+	@echo "🔍 Running validation mode..."
+	python run_experiment.py experiment=main_tasks/qwen3_8b validation.enabled=true validation.samples=5 validation.runs=1
+	@echo "✅ Validation complete"
+
 download-data: ## Download datasets from Hugging Face
 	@echo "📥 Downloading datasets..."
 	python scripts/download_data.py

@@ -332,6 +332,7 @@ class InverseScalingDemo {
                 <div class="answer-comparison">
                     <strong>Expected:</strong> ${prediction.correct_answer} | 
                     <strong>Predicted:</strong> ${prediction.extracted_answer || 'N/A'}
+                    ${this.renderTokenLimitWarning(prediction)}
                 </div>
             </div>
         `;
@@ -386,6 +387,7 @@ class InverseScalingDemo {
                     <div>
                         <strong>Expected:</strong> ${prediction.correct_answer} | 
                         <strong>Predicted:</strong> ${prediction.extracted_answer || 'N/A'}
+                        ${this.renderTokenLimitWarning(prediction)}
                     </div>
                     ${predictions && predictions.length > 1 ? `
                         <div>
@@ -436,6 +438,17 @@ class InverseScalingDemo {
         // First format the text, then highlight answer tags
         const formattedText = this.formatText(text);
         return formattedText.replace(/<answer>(.*?)<\/answer>/g, '<span class="answer-highlight">&lt;answer&gt;$1&lt;/answer&gt;</span>');
+    }
+
+    renderTokenLimitWarning(prediction) {
+        if (prediction.stop_reason === 'max_tokens' || prediction.stop_reason === 'length') {
+            return `
+                <div style="margin-top: 0.5rem; padding: 0.5rem; background-color: #FEF3C7; border: 1px solid #FCD34D; border-radius: 0.25rem; font-size: 0.8rem; color: #92400E;">
+                    ⚠️ Model ran out of tokens before completing the response
+                </div>
+            `;
+        }
+        return '';
     }
 
     hidePrediction() {
