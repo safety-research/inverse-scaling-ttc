@@ -200,7 +200,6 @@ for filename in filenames:
 filenames = [
     "synthetic-misleading-alignment-5-distractors.jsonl",
     "synthetic-misleading-cognitive-biases-5-distractors.jsonl",
-    "synthetic-misleading-game-theory-5-distractors.jsonl",
     "synthetic-misleading-philosophy-5-distractors.jsonl",
 ]
 
