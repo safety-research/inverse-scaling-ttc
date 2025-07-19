@@ -118,19 +118,6 @@ source .venv/bin/activate
 ./scripts/cluster/run_all_experiments.sh -s session_name experiment1 experiment2
 ```
 
-## 📄 Citation
-
-If you use this framework in your research, please cite:
-
-```bibtex
-@article{inverse-scaling-ttc,
-  title={Inverse Scaling in Test-Time Compute},
-  author={Gema, Aryo Pradipta and Hägele, Alexander and Chen, Runjin and Arditi, Andy and Goldman-Wetzler, Jacob and Fraser-Taliente, Cristofero and Sleight, Henry and Petrini, Linda and Michael, Julian and Alex, Beatrice and Minervini, Pasquale and Chen, Yanda and Benton, Joe and Perez, Ethan},
-  journal={arXiv preprint arXiv:2025.XXXXX},
-  year={2025}
-}
-```
-
 
 ## 📜 License
 
@@ -139,4 +126,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**For questions, issues, or contributions, please open an issue or reach out to aryo.gema@ed.ac.uk**
+**For questions, issues, or contributions, please open an issue**
