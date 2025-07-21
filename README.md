@@ -8,8 +8,8 @@
 
 ```bash
 # Clone and set up
-git clone --recurse-submodules https://github.com/safety-research/inverse-scaling-ttc.git
-cd inverse-scaling
+git clone --recurse-submodules [REPO LINK]
+cd inverse-scaling-ttc
 make install
 pip install -U vllm  # Because the vllm version in safety-tooling is outdated
 
