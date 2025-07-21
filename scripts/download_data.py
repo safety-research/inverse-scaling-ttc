@@ -21,7 +21,7 @@ filenames = [
 for filename in filenames:
     hf_hub_download(
         repo_type="dataset",
-        repo_id="inverse-scaling-ttc/inverse-scaling-ttc-main",
+        repo_id="anonscaling/inverse-scaling-ttc-main",
         filename=filename,
         local_dir="data/new_tasks",
     )
@@ -37,7 +37,7 @@ filenames = [
 for filename in filenames:
     hf_hub_download(
         repo_type="dataset",
-        repo_id="inverse-scaling-ttc/classic_tasks",
+        repo_id="anonscaling/classic_tasks",
         filename=filename,
         local_dir="data/classic_tasks",
     )
@@ -60,7 +60,7 @@ filenames = [
 for filename in filenames:
     hf_hub_download(
         repo_type="dataset",
-        repo_id="inverse-scaling-ttc/inverse_scaling_prize",
+        repo_id="anonscaling/inverse_scaling_prize",
         filename=filename,
         local_dir="data/inverse_scaling_prize",
     )
@@ -191,7 +191,7 @@ filenames = [
 for filename in filenames:
     hf_hub_download(
         repo_type="dataset",
-        repo_id="inverse-scaling-ttc/model-written-evals",
+        repo_id="anonscaling/model-written-evals",
         filename=filename,
         local_dir="data/model_written_eval",
     )
@@ -207,7 +207,7 @@ filenames = [
 for filename in filenames:
     hf_hub_download(
         repo_type="dataset",
-        repo_id="inverse-scaling-ttc/negative_results",
+        repo_id="anonscaling/negative_results",
         filename=filename,
         local_dir="data/new_tasks",
     )
