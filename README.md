@@ -27,10 +27,10 @@ make validate
 
 ## 📚 Task Categories
 
-- **Main Tasks**: synthetic_misleading_math, synthetic_misleading_python, student_lifestyle_regression, mathematical_paradoxes, zebra_puzzles, smith_jones_robinson
-- **AI Risk Tasks**: coordination, corrigibility, self-awareness, power/wealth-seeking, survival instinct
+- **Main Tasks**: synthetic_misleading_math, synthetic_misleading_python, student_lifestyle_regression, mathematical_paradoxes, zebra_puzzles
+- **AI Risk Tasks**: survival instinct, corrigibility, self-awareness, power/wealth-seeking, etc.
 - **Inverse Scaling Prize**: hindsight-neglect, memo-trap, modus-tollens, pattern-matching-suppression, etc.
-- **Standard Benchmarks**: GSM8K, ASDIV, MultiArith (for comparison)
+- **Standard Benchmarks**: GSM8K, ASDIV, MultiArith, etc.
 
 
 ## 🧪 Running Experiments
