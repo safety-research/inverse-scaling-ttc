@@ -123,10 +123,10 @@ source .venv/bin/activate
 If you use this framework in your research, please cite:
 
 ```bibtex
-@article{inverse-scaling-ttc,
-  title={Inverse Scaling in Test-Time Compute},
-  author={Gema, Aryo Pradipta and Hägele, Alexander and Chen, Runjin and Arditi, Andy and Goldman-Wetzler, Jacob and Fraser-Taliente, Cristofero and Sleight, Henry and Petrini, Linda and Michael, Julian and Alex, Beatrice and Minervini, Pasquale and Chen, Yanda and Benton, Joe and Perez, Ethan},
-  journal={arXiv preprint arXiv:2025.XXXXX},
+@article{gema2025inverse,
+  title={Inverse Scaling in Test-time Compute},
+  author={Aryo Pradipta Gema and Alexander Hägele and Runjin Chen and Andy Arditi and Jacob Goldman-Wetzler and Kit Fraser-Taliente and Henry Sleight and Linda Petrini and Julian Michael and Beatrice Alex and Pasquale Minervini and Yanda Chen and Joe Benton and Ethan Perez},
+  journal={arXiv preprint arXiv:2025.14417},
   year={2025}
 }
 ```
