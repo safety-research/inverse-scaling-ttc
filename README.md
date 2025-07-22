@@ -1,6 +1,6 @@
 # Inverse Scaling in Test-Time Compute
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv-red.svg)](https://arxiv.org) [![Demo](https://img.shields.io/badge/Demo-Live-green.svg)](https://)
+[![Paper](https://img.shields.io/badge/Paper-arXiv-red.svg)](https://arxiv.org/abs/2507.14417) [![Demo](https://img.shields.io/badge/Demo-Live-green.svg)](https://)
 
 > **Inverse scaling** occurs when increasing computational resources during inference (e.g., more reasoning tokens) leads to worse performance on certain tasks. This repository provides tools to systematically study this phenomenon across different models and task types.
 
