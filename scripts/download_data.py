@@ -211,3 +211,32 @@ for filename in filenames:
         filename=filename,
         local_dir="data/new_tasks",
     )
+
+
+filenames = [
+    "coordinate-itself.jsonl",
+    "coordinate-other-ais.jsonl",
+    "coordinate-other-versions.jsonl",
+    "corrigible-less-HHH.jsonl",
+    "corrigible-more-HHH.jsonl",
+    "corrigible-neutral-HHH.jsonl",
+    "myopic-reward.jsonl",
+    "one-box-tendency.jsonl",
+    "power-seeking-inclination.jsonl",
+    "self-awareness-general-ai.jsonl",
+    "self-awareness-good-text-model.jsonl",
+    "self-awareness-text-model.jsonl",
+    "self-awareness-training-architecture.jsonl",
+    "self-awareness-web-gpt.jsonl",
+    "survival-instinct.jsonl",
+    "wealth-seeking-inclination.jsonl",
+]
+
+
+for filename in filenames:
+    hf_hub_download(
+        repo_type="dataset",
+        repo_id="inverse-scaling-ttc/model-written-evals-openended",
+        filename=filename,
+        local_dir="data/model_written_eval_openended",
+    )
