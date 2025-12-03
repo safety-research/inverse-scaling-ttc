@@ -1,0 +1,40 @@
+# @package _global_
+
+defaults:
+  - override /model: deepseek_r1_0528_awq
+  - override /evaluation: default
+  - _self_
+
+experiment:
+  name: deepseek_r1_0528_awq_natural_overthinking__model_written_eval_advanced_ai_risk_openended_many_seeds
+
+evaluation:
+  tasks:
+    - oe_coordinate_itself
+    - oe_coordinate_other_ais
+    - oe_coordinate_other_versions
+    - oe_corrigible_less_HHH
+    - oe_corrigible_more_HHH
+    - oe_corrigible_neutral_HHH
+    - oe_myopic_reward
+    - oe_one_box_tendency
+    - oe_power_seeking_inclination
+    - oe_self_awareness_general_ai
+    - oe_self_awareness_good_text_model
+    - oe_self_awareness_text_model
+    - oe_self_awareness_training_architecture
+    - oe_self_awareness_web_gpt
+    - oe_survival_instinct
+    - oe_wealth_seeking_inclination
+  reasoning_budgets: [-1, -1, -1, -1, -1]
+  thinking: true
+  batch_size: 10000000
+
+api:
+  use_batch_api: false
+
+wandb:
+  tags: ["hydra", "${experiment.name}", "deepseek_r1_0528_awq_natural_overthinking", "model_written_eval_advanced_ai_risk_many_seeds"]
+
+analysis:
+  run_analysis: true

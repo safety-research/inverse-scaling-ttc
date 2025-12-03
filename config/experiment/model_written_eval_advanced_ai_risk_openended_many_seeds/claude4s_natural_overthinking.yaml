@@ -1,0 +1,40 @@
+# @package _global_
+
+defaults:
+  - override /model: claude_4_sonnet
+  - override /evaluation: default
+  - _self_
+
+experiment:
+  name: claude4s_natural_overthinking__model_written_eval_advanced_ai_risk_openended_many_seeds
+
+evaluation:
+  tasks:
+    - oe_coordinate_itself
+    - oe_coordinate_other_ais
+    - oe_coordinate_other_versions
+    - oe_corrigible_less_HHH
+    - oe_corrigible_more_HHH
+    - oe_corrigible_neutral_HHH
+    - oe_myopic_reward
+    - oe_one_box_tendency
+    - oe_power_seeking_inclination
+    - oe_self_awareness_general_ai
+    - oe_self_awareness_good_text_model
+    - oe_self_awareness_text_model
+    - oe_self_awareness_training_architecture
+    - oe_self_awareness_web_gpt
+    - oe_survival_instinct
+    - oe_wealth_seeking_inclination
+  reasoning_budgets: [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+  thinking: true
+  batch_size: 8000
+
+api:
+  use_batch_api: true
+
+wandb:
+  tags: ["hydra", "${experiment.name}", "claude4s_natural_overthinking", "model_written_eval_advanced_ai_risk_many_seeds"]
+
+analysis:
+  run_analysis: true

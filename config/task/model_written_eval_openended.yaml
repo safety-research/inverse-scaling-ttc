@@ -1,0 +1,135 @@
+# @package task
+
+# List of classic tasks
+tasks:
+  - oe_coordinate_itself
+  - oe_coordinate_other_ais
+  - oe_coordinate_other_versions
+  - oe_corrigible_less_HHH
+  - oe_corrigible_more_HHH
+  - oe_corrigible_neutral_HHH
+  - oe_myopic_reward
+  - oe_one_box_tendency
+  - oe_power_seeking_inclination
+  - oe_self_awareness_general_ai
+  - oe_self_awareness_good_text_model
+  - oe_self_awareness_text_model
+  - oe_self_awareness_training_architecture
+  - oe_self_awareness_web_gpt
+  - oe_survival_instinct
+  - oe_wealth_seeking_inclination
+
+# Model Written Eval
+
+task_definitions:
+  oe_coordinate_itself:
+    name: "Coordinate Itself"
+    description: ""
+    category: "Model-Written Eval (Open-Ended)"
+    file_path: "data/model_written_eval_openended/coordinate-itself.jsonl"
+    metric: accuracy
+
+  oe_coordinate_other_ais:
+    name: "Coordinate With Other AIs"
+    description: ""
+    category: "Model-Written Eval (Open-Ended)"
+    file_path: "data/model_written_eval_openended/coordinate-other-ais.jsonl"
+    metric: accuracy
+
+  oe_coordinate_other_versions:
+    name: "Coordinate With Newer/Older Versions"
+    description: ""
+    category: "Model-Written Eval (Open-Ended)"
+    file_path: "data/model_written_eval_openended/coordinate-other-versions.jsonl"
+    metric: accuracy
+
+  oe_corrigible_less_HHH:
+    name: "Corrigibility w.r.t a Less HHH objective"
+    description: ""
+    category: "Model-Written Eval (Open-Ended)"
+    file_path: "data/model_written_eval_openended/corrigible-less-HHH.jsonl"
+    metric: accuracy
+
+  oe_corrigible_more_HHH:
+    name: "Corrigibility w.r.t a More HHH objective"
+    description: ""
+    category: "Model-Written Eval (Open-Ended)"
+    file_path: "data/model_written_eval_openended/corrigible-more-HHH.jsonl"
+    metric: accuracy
+
+  oe_corrigible_neutral_HHH:
+    name: "Corrigibility w.r.t a Neutrally HHH objective"
+    description: ""
+    category: "Model-Written Eval (Open-Ended)"
+    file_path: "data/model_written_eval_openended/corrigible-neutral-HHH.jsonl"
+    metric: accuracy
+
+  oe_myopic_reward:
+    name: "Myopic Reward"
+    description: ""
+    category: "Model-Written Eval (Open-Ended)"
+    file_path: "data/model_written_eval_openended/myopic-reward.jsonl"
+    metric: accuracy
+
+  oe_one_box_tendency:
+    name: "One-Box Tendency"
+    description: ""
+    category: "Model-Written Eval (Open-Ended)"
+    file_path: "data/model_written_eval_openended/one-box-tendency.jsonl"
+    metric: accuracy
+
+  oe_power_seeking_inclination:
+    name: "Power Seeking Inclination"
+    description: ""
+    category: "Model-Written Eval (Open-Ended)"
+    file_path: "data/model_written_eval_openended/power-seeking-inclination.jsonl"
+    metric: accuracy
+
+  oe_self_awareness_general_ai:
+    name: "Awareness of Being An AI"
+    description: ""
+    category: "Model-Written Eval (Open-Ended)"
+    file_path: "data/model_written_eval_openended/self-awareness-general-ai.jsonl"
+    metric: accuracy
+
+  oe_self_awareness_good_text_model:
+    name: "Awareness of Ability To Solve Complex Text Tasks"
+    description: ""
+    category: "Model-Written Eval (Open-Ended)"
+    file_path: "data/model_written_eval_openended/self-awareness-good-text-model.jsonl"
+    metric: accuracy
+
+  oe_self_awareness_text_model:
+    name: "Awareness of Being a Text-Only Model"
+    description: ""
+    category: "Model-Written Eval (Open-Ended)"
+    file_path: "data/model_written_eval_openended/self-awareness-text-model.jsonl"
+    metric: accuracy
+
+  oe_self_awareness_training_architecture:
+    name: "Awareness of Architecture"
+    description: ""
+    category: "Model-Written Eval (Open-Ended)"
+    file_path: "data/model_written_eval_openended/self-awareness-training-architecture.jsonl"
+    metric: accuracy
+
+  oe_self_awareness_web_gpt:
+    name: "Awareness of Lack of Internet Access"
+    description: ""
+    category: "Model-Written Eval (Open-Ended)"
+    file_path: "data/model_written_eval_openended/self-awareness-web-gpt.jsonl"
+    metric: accuracy
+
+  oe_survival_instinct:
+    name: "Survival Instinct"
+    description: ""
+    category: "Model-Written Eval (Open-Ended)"
+    file_path: "data/model_written_eval_openended/survival-instinct.jsonl"
+    metric: accuracy
+
+  oe_wealth_seeking_inclination:
+    name: "Wealth Seeking Inclination"
+    description: ""
+    category: "Model-Written Eval (Open-Ended)"
+    file_path: "data/model_written_eval_openended/wealth-seeking-inclination.jsonl"
+    metric: accuracy
